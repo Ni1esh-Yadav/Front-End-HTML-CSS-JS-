@@ -1,4 +1,4 @@
-MCA Cricket Tournaments Website
+# MCA Cricket Tournaments Website
 
 Welcome to the **MCA Cricket Tournaments Website**! This project is a comprehensive platform designed to organize and manage various cricket tournaments across different formats. Leveraging modern web technologies, it offers an engaging user experience with 3D visualizations, smooth animations, and a seamless multi-step registration process.
 
@@ -64,14 +64,14 @@ The MCA Cricket Tournaments Website is a dynamic platform that facilitates the o
 
 ## Installation
 
-1. Clone the Repository
+1. **Clone the Repository**
 
    ```bash
    git clone https://github.com/your-username/mca-cricket-tournaments.git
    cd mca-cricket-tournaments
    ```
 
-2. Install Dependencies
+2. **Install Dependencies**
 
    Ensure you have [Node.js](https://nodejs.org/) installed. Then, install the necessary packages:
 
@@ -79,7 +79,7 @@ The MCA Cricket Tournaments Website is a dynamic platform that facilitates the o
    npm install
    ```
 
-3. Start the Development Server
+3. **Start the Development Server**
 
    ```bash
    npm start
@@ -89,19 +89,19 @@ The MCA Cricket Tournaments Website is a dynamic platform that facilitates the o
 
 ## Usage
 
-1. Navigate the Website
+1. **Navigate the Website**
 
    Use the navigation bar to explore different sections like Men, Women, Registration Form, etc.
 
-2. View Tournaments
+2. **View Tournaments**
 
    Scroll through various tournament formats like T20, ODI, Test, T10, and Domestic. Each section provides detailed information and an option to enroll.
 
-3. Register Your Team
+3. **Register Your Team**
 
    Click on the "Enroll" button in any tournament section to start the multi-step registration process.
 
-4. Submit Registration
+4. **Submit Registration**
 
    Fill out the form across multiple steps and submit your team details. The data is sent to the backend server for processing.
 
@@ -148,22 +148,22 @@ mca-cricket-tournaments/
 
 ### NavBar
 
-File: `src/Components/NavBar.jsx`
+**File:** `src/Components/NavBar.jsx`
 
 The `NavBar` component provides the main navigation for the website, allowing users to access different sections like Home, Men, Women, and Registration.
 
-Key Features:
+**Key Features:**
 
 - Responsive design using Tailwind CSS.
 - Contains links to various routes managed by React Router.
 
 ### Sidebar
 
-File: `src/Components/Sidebar.jsx`
+**File:** `src/Components/Sidebar.jsx`
 
 The `Sidebar` component offers additional navigation and information sections such as About, Players, Formats, MCA, and Contact.
 
-Key Features:
+**Key Features:**
 
 - Conditionally rendered based on the `isOpen` state from `AppContext`.
 - Uses Tailwind CSS for styling and responsiveness.
@@ -175,7 +175,7 @@ Key Features:
 
 The `Canva` component sets up the 3D scene using Three.js and React-Three-Fiber.
 
-Key Features:
+**Key Features:**
 
 - Configures the Three.js canvas with camera settings.
 - Adds lighting and environment effects.
@@ -186,11 +186,11 @@ Key Features:
 
 ### Clump
 
-File: `src/three/Clump.jsx`
+**File:** `src/three/Clump.jsx`
 
 The `Clump` component creates a group of spheres with physics applied.
 
-Key Features:
+**Key Features:**
 
 - Uses `useSphere` from `@react-three/cannon` to handle physics.
 - Dynamically scales based on viewport size.
@@ -205,11 +205,11 @@ Key Features:
 
 ### Sex
 
-File `src/Components/Sex.jsx`
+**File:** `src/Components/Sex.jsx`
 
 The `Sex` component provides navigation options to different player categories, namely Men and Women.
 
-Key Features:
+**Key Features:**
 
 - Animates into view using GSAP and ScrollTrigger.
 - Contains images with hover effects for interactivity.
@@ -217,11 +217,11 @@ Key Features:
 
 ### Men
 
-File: `src/Components/Men.jsx`
+**File:** `src/Components/Men.jsx`
 
 The `Men` component displays information about men's cricket tournaments in various formats with parallax scrolling effects.
 
-Key Features:
+**Key Features:**
 
 - Utilizes GSAP for parallax animations.
 - Contains multiple sections, each representing a different tournament format.
@@ -397,12 +397,12 @@ const handleChange = (input) => (e) => {
 
 The application uses the **React Context API** to manage global state across components.
 
-AppContext
+**AppContext**
 
-- File: `src/context/AppContext.jsx`
-- Purpose Manages the `isOpen` state for components like `Sidebar`.
+- **File:** `src/context/AppContext.jsx`
+- **Purpose:** Manages the `isOpen` state for components like `Sidebar`.
   
-Example: Using AppContext in Sidebar
+**Example: Using AppContext in Sidebar**
 
 ```javascript
 const { isOpen } = useContext(AppContext);
@@ -422,7 +422,7 @@ return (
 - **Responsive Design**: Achieved through Tailwind's responsive utilities like `md:w-full`, `lg:w-1/5`, etc.
 - **Hover Effects**: Applied for interactivity on buttons and images.
 
-Example: Button Styling in Men Component
+**Example: Button Styling in Men Component**
 
 ```html
 <button onClick={onEnroll} className="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700">
@@ -434,12 +434,12 @@ Example: Button Styling in Men Component
 
 The registration form submits data to a backend server using **Axios**.
 
-Summary Component
+**Summary Component**
 
-- File: `src/steps/Summary.jsx`
-- Functionality: Sends form data to `http://localhost:5000/submit` via a POST request.
+- **File:** `src/steps/Summary.jsx`
+- **Functionality:** Sends form data to `http://localhost:5000/submit` via a POST request.
 
-Example: Form Submission
+**Example: Form Submission**
 
 ```javascript
 const handleSubmit = async (e) => {
@@ -457,7 +457,19 @@ const handleSubmit = async (e) => {
 
 **Note:** Ensure that the backend server is set up to handle the POST request at the specified endpoint.
 
+## Screenshots
+![Registration](https://github.com/user-attachments/assets/b12b74bd-9f46-4e42-826e-32d281bef03a)
+![Men](https://github.com/user-attachments/assets/5f08a69d-49e8-4f81-baa6-b8b36ce71fcf)
+![Hero](https://github.com/user-attachments/assets/fe6facfc-689b-45eb-9236-8fd9f9ed2a66)
+![Sex](https://github.com/user-attachments/assets/0416ffa4-f8d8-4346-a7b7-864be25d92a9)
 
+
+## Contact
+
+For any questions or feedback, please reach out to:
+
+- **Email:** Nm9172@gmail.com
+- **GitHub:** [Ni1esh-Yadav](https://github.com/Ni1esh-Yadav/Cricket-UI)
 
 ---
 
